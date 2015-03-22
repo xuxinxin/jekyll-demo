@@ -1,14 +1,32 @@
-# Site settings
-title: Your awesome title
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+# general configuration
+url: http://excentris.net
+baseurl: ''
 
-# Build settings
+#setup
+title:      XuXinxin's Personal site
+tagline:    'Enjoy code and life'
+description: "I'm keen on programming, especially Web design,with good command of <b>C++</b>,<b>PHP</b>,<b>HTML</b> and <b>CSS</b>."
+
+# compass configuration
+compass:
+  # an avatar or logo (optional)
+  logo: "/images/me.jpg"
+  # author will appear under the avatar (optional)
+  author: "XuXinxin"
+  # tagline will appear under the title (optional)
+  tagline: "Go to <a href='/blog'>Blog</a> for touching me more "
+  # if include_content is true, the contents of the content.html include will be
+  # added right above the generated item list, if present
+  include_content: true
+  # if include_analytics is true, the content of the analytics.html include will
+  # be added at the end of the <head> section. You can add your Google Analytics
+  # Tracking Code to that file.
+  include_analytics: false
+
+# Dependencies
 markdown: kramdown
+highlighter: pygments
+
+# Permalinks
+permalink: pretty
+relative_permalinks: true

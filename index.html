@@ -1,13 +1,28 @@
 ---
-layout: default
-title:  My Blog
+layout: base
 ---
-<h2>{{ page.title }}</h2>
-<p>最新文章</p>
-<ul>
-  {% for post in site.posts %}
-  <li>{{ post.date | date_to_string }} 
-    <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-  </li>
-　{% endfor %}
-</ul>
+<div class="wrapper">
+    <header>
+        {% if site.compass.logo %}
+        <div class="logo-container">
+          <a class="logo" href="/blog" style="background-image: url('{{ site.baseurl }}{{ site.compass.logo }}')"></a>
+        </div>
+        {% endif %}
+
+        {% if site.compass.author %}
+        <div class="author-container"><h1>{{ site.compass.author }}</h1></div>
+        {% endif %}
+
+        {% if site.compass.tagline %}
+        <div class="tagline-container"><p>{{ site.compass.tagline }}</p></div>
+        {% endif %}
+    </header>
+    <main>
+      {% if site.compass.include_content %}
+      <div class="content">
+        {% include content.html %}
+      </div>
+      {% endif %}
+
+    </main>
+</div>
