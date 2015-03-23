@@ -1,6 +1,6 @@
 # general configuration
 url: http://excentris.net
-baseurl: 'http://xuxinxin.github.io/jekyll-demo'
+baseurl: 'xuxinxin.github.io/jekyll-demo'
 
 #setup
 title:      XuXinxin's Personal site
