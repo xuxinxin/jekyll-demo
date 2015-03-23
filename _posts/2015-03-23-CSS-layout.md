@@ -56,7 +56,7 @@ title: CSS layout
 {% endhighlight %}
 现在它们一样大了。
 
-##position
+##4. position
 为了制作更复杂的布局，我们需要讨论**position**属性。属性值为**static,relative,absolute,fixed**。我们分别看一下：
 
 ###static
@@ -86,7 +86,7 @@ title: CSS layout
 ###absolute
 **absolute** 是最棘手的position值。 **absolute** 与 **fixed** 的表现类似，除了它不是相对于视窗而是相对于最近的“positioned”祖先元素。如果绝对定位（position属性的值为absolute）的元素没有 “positioned” 祖先元素，那么它是相对于文档的 body 元素，并且它会**随着页面滚动而移动**。记住一个“positioned”元素是指 **position** 值**不是** **static** 的元素。
 
-##float
+##5. float
 另一个布局中常用的CSS属性是 **float** 。**Float** 可用于实现文字环绕图片，如下：
 {% highlight CSS %}
 img {
@@ -104,7 +104,7 @@ img {
 {%  endhighlight%}
 清除浮动是一个比较难的问题，[Which method of ‘clearfix’ is best？](http://stackoverflow.com/questions/211383/which-method-of-clearfix-is-best)
 
-##媒体查询
+##6. 媒体查询
 “响应式设计（Responsive Design）”是一种让网站针对不同的浏览器和设备“响应”不同显示效果的策略，这样可以让网站在任何情况下显示的很棒！
 
 媒体查询是做此事所需的最强大的工具。让我们使用百分比宽度来布局，然后在
@@ -154,7 +154,7 @@ img {
 * 如果HTML源码中元素有空格，那么列与列之间会有空隙
 
 
-##新的CSS
+##7. 新的CSS
 CSS columns可以实现文字的分列显示，[flexbox](http://www.w3.org/TR/css3-flexbox/)的布局。
 
 
