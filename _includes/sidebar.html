@@ -11,11 +11,8 @@
 
   <nav class="sidebar-nav">
     <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}/">Home</a>
-
-    {% comment %}
-      The code below dynamically generates a sidebar nav of pages with
-      `layout: page` in the front-matter. See readme for usage.
-    {% endcomment %}
+    <a class="sidebar-nav-item" href="{{ site.baseurl }}/blog">Blog</a>
+    <a class="sidebar-nav-item" href="{{ site.baseurl }}/project">Project</a>
 
     {% assign pages_list = site.pages | sort:"url" %}
     {% for node in pages_list %}
@@ -26,13 +23,13 @@
       {% endif %}
     {% endfor %}
 
-    <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a>
+    
     <span class="sidebar-nav-item">V1.0.0{{ site.version }}</span>
   </nav>
 
   <div class="sidebar-item">
     <p>
-      &copy; {{ site.time | date: '%Y' }}. All rights reserved.
-    </p>
+      &copy; {{ site.time | date: '%Y' }}. All rights reserved.<br>
+      Thaks <a href="http://compass-style.org">compass</a> &amp; <a href="https://github.com/poole/">poole</a>.</p>
   </div>
 </div>

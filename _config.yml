@@ -1,6 +1,6 @@
 # general configuration
 url: http://excentris.net
-baseurl: /jekyll-demo #'http://xuxinxin.github.io/jekyll-demo'
+baseurl: /jekyll-demo #'''http://xuxinxin.github.io/jekyll-demo'
 
 #setup
 title:      XuXinxin's Personal site
@@ -25,7 +25,7 @@ compass:
 
 # Dependencies
 markdown: kramdown
-highlighter: pygments
+highlighter: pygments#true
 
 # Permalinks
 permalink: pretty

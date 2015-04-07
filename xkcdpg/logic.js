@@ -11,6 +11,7 @@
 	var words =["hello","world","you","are","handsome","Americanisms","Muslim","Octobers","Sabbaths","Wednesday","abhor","able","aborted","abrupt"];
 	var text,count,separator,numOfWords,numOfNumbers;
 
+	updateNode(result,"<i>Generating...</i>");
 	function randomWords(words_count,num_count,separator,num_numbers){
 		
 		num_count   = num_count || 0;
