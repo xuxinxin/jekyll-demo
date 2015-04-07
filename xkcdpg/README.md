@@ -1,6 +1,6 @@
-# P2 of Dynamic Web Applications
-
+#XKCD Password Generator
 ----
+
 ## what is XKCD Password Generator?
 see [xkcd](http://xkcd.com/936/)
 
@@ -8,14 +8,18 @@ see [xkcd](http://xkcd.com/936/)
 
 ![](http://imgs.xkcd.com/comics/password_strength.png)
 
-
 ----
 ## changelog
-* 16-Mar-2015 create
+Update on 7-April-2015
+
+Remove PHP, use JS only!
+
 
 ----
-## License
-This is free software: you may copy, modify, and/or distribute this work under the terms of the BSD 3-Clause license. See the file LICENSE.BSD for details.
+##usage
+If your Browser is Firefox, everything is OK. But if you use other Browser you should move the **dict.txt** to the right position. Youc can create your own dict.txt, just remember split words with '\n'!
+
+
 
 ----
 ##Libs
