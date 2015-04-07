@@ -25,7 +25,7 @@ compass:
 
 # Dependencies
 markdown: kramdown
-highlighter: pygments#true
+highlighter: pygments #true
 
 # Permalinks
 permalink: pretty
